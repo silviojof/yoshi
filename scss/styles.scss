@@ -1,3 +1,53 @@
-h1 {
-  color: green;
+@charset 'UTF-8';
+
+// 0. Foundation Grid
+
+@import './node_modules/foundation-sites/scss/foundation';
+
+@include foundation-grid;
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendor/normalize';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/button';
+
+// 6. Page-specific styles
+@import
+  'pages/home';
+
+// 7. Themes
+@import
+  'themes/default';
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: lime;
+}
+
+#green {
+  background-color: green;
 }

@@ -4,11 +4,11 @@
   "description": "Website for term 02",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --output-style nested -o css scss",
+    "scss": "node-sass scss/styles.scss -o css",
     "autoprefixer": "postcss -u autoprefixer -r css/*",
     "serve": "browser-sync start --proxy localhost/yoshi --files css/*.css, js/*.js, *.html, *.php, partials/*.php --browser Chrome",
     "buildcss": "npm run scss && npm run autoprefixer",
-    "watchcss": "onchange \"src/scss\" -- npm run buildcss",
+    "watchcss": "onchange \"scss\" -- npm run buildcss",
     "watchall": "npm-run-all -p serve watchcss"
   },
   "repository": {
@@ -28,5 +28,8 @@
     "npm-run-all": "^4.0.1",
     "onchange": "^3.2.1",
     "postcss-cli": "^2.6.0"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.3.0"
   }
 }
