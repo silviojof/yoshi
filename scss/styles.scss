@@ -5,6 +5,7 @@
 @import './node_modules/foundation-sites/scss/foundation';
 
 @include foundation-grid;
+@include foundation-visibility-classes;
 
 // 1. Configuration and helpers
 @import
