@@ -2,44 +2,27 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-
-
-
-
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Montserrat', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$text-alternative: 'Playfair', cursive;
 
-
-
-
-
-/// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
 
 /// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$brand-color: rgb(119, 0, 60) !default;
 
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+/// Light brand color
+$light-brand-color: rgb(153, 0, 77) !default;
 
-/// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
+/// Light Color
+$light-color: rgb(217, 217, 217) !default;
 
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+/// Medium Color
+$mid-color: rgb(146, 146, 146) !default;
 
-
-
+/// Dark Color
+$dark-color: rgb(20, 20, 20) !default;
 
 
 /// Container's maximum width
@@ -47,21 +30,18 @@ $dark-grey: rgb(68, 68, 68) !default;
 $max-width: 1180px !default;
 
 
+$transition-hover: all 0.2s ease-in-out;
 
 
-
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
-) !default;
+  small: 0,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);
 
-
-
-
+//max-width: map-get($breakpoints, primary)
 
 
 /// Relative or absolute URL where all assets are served from

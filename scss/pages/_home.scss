@@ -1,3 +1,55 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+/*Slider Box */
+
+.slider-box {
+  position: relative;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  @media screen and (max-width: map-get($breakpoints, medium)){
+    height:93vh;
+  }
+  @media screen and (min-width: map-get($breakpoints, large)) {
+    padding-left: calcRem(300px);
+  }
+  @media screen and (min-width: map-get($breakpoints, xlarge)) {
+    padding-left: calcRem(400px);
+  }
+}
+
+.slider-bg {
+  height: 100%;
+  width: 100%;
+}
+
+.slider-img {
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 150%;
+  transition: opacity 4s ease, visibility 4s;
+  animation: bg 80s linear infinite;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+
+}
+
+@keyframes bg {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}

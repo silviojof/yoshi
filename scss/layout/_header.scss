@@ -1,3 +1,203 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+/* Header Container */
+.header-header {
+  background-color: $brand-color;
+  padding: 0;
+  position: relative;
+  @media screen and (min-width: map-get($breakpoints, large)) {
+    position: fixed;
+    height: 100vh;
+    width: calcRem(300px);
+    padding: 2.5rem;
+  }
+  @media screen and (min-width: map-get($breakpoints, xlarge)) {
+    width: calcRem(400px);
+    padding: 4.5rem;
+  }
+}
+
+/* Header Logo */
+.img-header {
+  margin: 0.7rem;
+  width: 7rem;
+  img {
+    width: 100%;
+  }
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    width: 100%;
+    display: block;
+    text-align: center;
+    img {
+      margin: 2rem auto;
+      width: 12rem;
+    }
+  }
+  @media screen and (min-width: map-get($breakpoints, large)) {
+    margin: 0.5rem 0 4rem;
+    img {
+      margin: 0.5rem auto;
+      width: 10rem;
+    }
+  }
+}
+
+/*Header Navigation*/
+.nav-header {
+  display: none;
+  ul {
+    margin: 0; padding: 0; list-style-type: none;
+  }
+  li {
+    margin: 0;
+    border-bottom: 1px solid $light-brand-color;
+  }
+  a {
+    background-color: $light-brand-color;
+    color: $light-color;
+    text-transform: uppercase;
+    font-weight: 300;
+    display: block;
+    padding: 0.8rem;
+    transition: $transition-hover;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    display: block;
+    a {
+      padding: 1.2rem;
+      font-size: 1.1rem;
+      font-weight: 200;
+    }
+  }
+  @media screen and (min-width: map-get($breakpoints, medium)) and (max-width:  map-get($breakpoints, large)) {
+    margin: 0 auto;
+    max-width: calcRem(750px);
+    .header-submenu > a {
+        width: 6rem;
+    }
+    ul:first-child {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+    }
+    li {
+      float: left;
+      border-bottom: none;
+    }
+    a {
+      display: inline-block;
+      background-color: transparent;
+    }
+  }
+  @media screen and (min-width: map-get($breakpoints, large)) {
+    a {
+      background-color: transparent;
+      padding: 0.7rem 0;
+    }
+    li:first-child {
+      border-top: 1px solid $light-brand-color;
+    }
+  }
+}
+
+/*Hamburger Menu*/
+.header-menu {
+  display: inline-block;
+  position: absolute;
+  top: calcRem(9px);
+  right: calcRem(12px);
+  i {
+    color: $light-color;
+    font-size: 2rem;
+  }
+}
+
+/* Dropdown menu*/
+.header-submenu {
+  position: relative;
+  cursor: pointer;
+  i {
+    position: absolute;
+    right: calcRem(18px);
+    top: calcRem(18px);
+    color: $light-color;
+  }
+  @media screen and (min-width: map-get($breakpoints, medium)) and (max-width:  map-get($breakpoints, large)) {
+    margin-right: 1.2rem;
+    i {
+      right: calcRem(-24px);
+      top: calcRem(26px);
+      color: $light-brand-color;
+    }
+  }
+  @media screen and (min-width: map-get($breakpoints, large)) {
+    i {
+      font-size: 1.2rem;
+      right: 0;
+      top: 1.1rem;
+      color: $light-brand-color;
+    }
+  }
+}
+
+
+.header-nested {
+  a {
+    padding-left: 3rem;
+    transition: $transition-hover;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  display: none;
+  font-style: italic;
+  li:last-child {
+    border-bottom: none;
+  }
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    position: absolute;
+    width: 12rem;
+    li {
+      background-color: $light-brand-color;
+      border-bottom: 1px solid $light-brand-color;
+      width: 100%;
+    }
+    a {
+      font-size: 1.2rem;
+      padding: 0.6rem 0 0.6rem 1.5rem;
+    }
+  }
+  @media screen and (min-width: map-get($breakpoints, large)) {
+    position: relative;
+    width: 100%;
+    li {
+      background-color: transparent;
+    }
+    a {
+      font-size: 1rem;
+    }
+  }
+}
+
+/*Social Icons Menu*/
+.header-social {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -6rem;
+  ul {
+    margin:0;padding:0;list-style-type: none;
+    display: inline-block;
+  }
+  li {
+    float: left;
+  }
+  a {
+    display: inline-block;
+    color: $light-color;
+    padding: 0.8rem;
+    font-size: 1.8rem;
+  }
+}

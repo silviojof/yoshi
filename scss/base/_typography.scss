@@ -2,6 +2,100 @@
  * Basic typography style for copy text
  */
 body {
-  color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
+}
+
+
+
+body {
+	font-family: $text-font-stack;
+	font-size: 15px;
+	color: #333;
+	background-color: #FFF;
+	line-height: 1.735;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 800;
+	line-height: 1.2;
+	font-family: $text-font-stack;
+}
+
+h1 {
+	font-size: 5.06rem;
+	font-weight: 300;
+	margin-top: 0.53rem;
+	margin-bottom: 0.53rem;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 3.33rem;
+	font-weight: 500;
+	margin-top: 0.4rem;
+	margin-bottom: 0.4rem;
+}
+
+h3 {
+	font-size: 2.25rem;
+	font-weight: 800;
+	margin-top: 0.4rem;
+	margin-bottom: 0.4rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+	font-weight: 800;
+	margin-top: 0.67rem;
+	margin-bottom: 0.67rem;
+}
+
+h5 {
+	font-size: 1.06rem;
+	font-weight: 700;
+	margin-top: 0.94rem;
+	margin-bottom: 0.94rem;
+}
+
+h6 {
+	font-size: 1rem;
+	font-weight: 700;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+p {
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+a {
+	color: #000000;
+}
+
+a:hover {
+
+}
+
+ul,ol {
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
+	padding-left: 1.1rem;
+}
+
+li {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.text-alternative {
+  font-family: $text-alternative;
 }

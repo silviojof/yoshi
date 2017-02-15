@@ -17,7 +17,7 @@ html {
  */
 *, *::before, *::after {
   box-sizing: inherit;
-} 
+}
 
 /**
  * Basic styles for links
@@ -27,7 +27,6 @@ a {
   text-decoration: none;
 
   @include on-event {
-    color: $text-color;
-    text-decoration: underline;
+    color: $brand-color;
   }
 }
