@@ -53,3 +53,178 @@
     transform: translateX(-25%);
   }
 }
+
+
+/*Gallery*/
+
+.home-gallery {
+  position: relative;
+}
+
+.home-gallery-title {
+  position: relative;
+  &.column.row {
+    padding: 0;
+  }
+  background-color: $brand-color;
+  height: calcRem(700px);
+    @media screen and (max-width: map-get($breakpoints, large)) {
+      height: auto;
+    }
+
+  .title-01 {
+    width: 25%;
+    height: calcRem(600px);
+    background-color: $light-color;
+    position: relative;
+    h2 {
+      text-transform: uppercase;
+      font-weight: 900;
+      color: $brand-color;
+      font-size: 5rem;
+      margin: 0;
+      transform: rotate(270deg);
+      position: absolute;
+      bottom: 11rem;
+      right: -8rem;
+    }
+    @media screen and (max-width: map-get($breakpoints, large)) {
+      width: 100%;
+      height: auto;
+      padding: 6rem 0;
+      h2 {
+        position: static;
+        transform:none;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      h2 {
+        font-size: 4rem;
+      }
+    }
+  }
+  .title-02 {
+    h3 {
+      position: absolute;
+      top: 4rem;
+      right: 4rem;
+      color: $light-brand-color;
+      font-weight: 500;
+      line-height: 0.8;
+      font-size: 4rem;
+      span {
+        font-style: italic;
+      }
+      @media screen and (min-width: map-get($breakpoints, xlarge)) {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+.title-03 {
+  h3 {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    color: $brand-color;
+    font-weight: 500;
+    line-height: 0.8;
+    font-size: 4rem;
+      span {
+        font-style: italic;
+      }
+    }
+  }
+
+.home-gallery-img {
+  width: 100%;
+  background-color: green;
+  overflow: hidden;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.home-gallery-column {
+  position: relative;
+  min-width: 25%;
+  .home-gallery-absolute {
+
+  }
+  #col-01 {
+    margin-top: calcRem(-100px);
+  }
+  #col-02 {
+    margin-top: calcRem(-395px);
+    @media screen and (max-width: map-get($breakpoints, large)) {
+      margin-top: 0;
+    }
+  }
+  #col-03 {
+    margin-top: calcRem(-215px);
+    @media screen and (max-width: map-get($breakpoints, large)) {
+      margin-top: 0;
+    }
+  }
+  #col-04 {
+    top: 0;
+  }
+}
+
+.home-yoshi {
+  display: flex;
+  align-content: stretch;
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    flex-wrap: wrap;
+    .home-yoshi-img {
+      height: 20rem;
+    }
+  }
+}
+
+.home-yoshi-img {
+  overflow: hidden;
+  background-color: blue;
+  height: auto;
+  background-image: url('../images/yoshi-final.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.home-yoshi-text {
+  background-color: $mid-color;
+  padding: 4rem !important;
+  p {
+    color: $dark-color;
+    line-height: 2.5;
+  }
+  a {
+    display: inline-block;
+    background-color: $brand-color;
+    text-transform: uppercase;
+    color: $light-color;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+  }
+}
+
+.yoshi-takashima {
+  background-color: $brand-color;
+  height: 33rem;
+  position: relative;
+  h2 {
+    font-size: 5rem;
+    line-height: 0.8;
+    margin: 0;
+    text-transform: uppercase;
+    color: $light-brand-color;
+    font-weight: 900;
+    transform: rotate(270deg);
+    position: absolute;
+    right: calcRem(-165px);
+    top: calcRem(198px)
+  }
+}

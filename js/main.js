@@ -51,4 +51,13 @@ $(function(){
 
 
 
+// var galHeight = $('#col-03').height();
+// $('.home-gallery-column').height(galHeight);
+//
+// $(window).resize(function(){
+//   galHeight = $('#col-03').height();
+//   $('.home-gallery-column').height(galHeight);
+// });
+
+
 });
