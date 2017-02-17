@@ -6,12 +6,11 @@
 
 .page-container {
   width: 100%;
-  height: 2000px;
   color: grey;
   @media screen and (min-width: map-get($breakpoints, large)) {
-    padding-left: calcRem(300px);
+    padding-left: calcRem(250px);
   }
-  @media screen and (min-width: map-get($breakpoints, xlarge)) {
+  @media screen and (min-width: map-get($breakpoints, xxlarge)) {
     padding-left: calcRem(400px);
   }
 }

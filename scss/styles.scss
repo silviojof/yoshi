@@ -37,20 +37,9 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/gallery';
 
 // 7. Themes
 @import
   'themes/default';
-
-#red {
-  background-color: pink;
-}
-
-#blue {
-  background-color: lime;
-}
-
-#green {
-  background-color: green;
-}

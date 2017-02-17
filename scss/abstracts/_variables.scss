@@ -49,3 +49,7 @@ $breakpoints: (
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
+
+@mixin main-transition {
+  transition: all 0.3s ease-in-out 0.1s;
+}

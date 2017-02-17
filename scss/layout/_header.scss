@@ -7,10 +7,10 @@
   @media screen and (min-width: map-get($breakpoints, large)) {
     position: fixed;
     height: 100vh;
-    width: calcRem(300px);
+    width: calcRem(250px);
     padding: 2.5rem;
   }
-  @media screen and (min-width: map-get($breakpoints, xlarge)) {
+  @media screen and (min-width: map-get($breakpoints, xxlarge)) {
     width: calcRem(400px);
     padding: 4.5rem;
   }
