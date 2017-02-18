@@ -1,12 +1,12 @@
 <?php include 'partials/header.php'; ?>
 
 
-<div class="pages-header ">
+<div class="pages-header">
   <div class="pages-header-img">
     <img src="images/header-gallery.jpg" />
   </div>
   <div class="pages-header-hero clearfix">
-    <h1 class=pages-header-title>gallery</h1>
+    <h1 class="pages-header-title gallery">gallery</h1>
     <div class="pages-header-box clearfix">
       <h2>A glimpse at<br> <span class="text-alternative">what we do</span></h2>
       <nav class="gallery-categories">
@@ -123,8 +123,6 @@
     </div>
   </div>
 </section>
-
-
-
+<?php include 'partials/cta.php'; ?>
 
 <?php include 'partials/footer.php'; ?>

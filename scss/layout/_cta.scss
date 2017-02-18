@@ -1,0 +1,29 @@
+.cta-box {
+  background-color: $light-brand-color;
+  text-align: center;
+  padding: 3rem 0.8rem;
+  h4 {
+    margin: 0;
+    color: $light-color;
+    font-weight: 400;
+    span {
+      font-size: 1.7rem;
+    }
+  }
+  a {
+    display: inline-block;
+    color: $light-color;
+    border: 1px solid $light-color;
+    padding: 1.2rem 3rem;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+    @include main-transition;
+    &:hover {
+      background-color: $light-color;
+      color: $brand-color;
+    }
+  }
+  @media screen and (min-width: map-get($breakpoints, large)) {
+    padding: 6rem 1rem;
+  }
+}

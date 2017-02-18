@@ -33,7 +33,7 @@
         <li><a href="#">rates</a></li>
         <li><a href="#">blog</a></li>
         <li><a href="gallery.php">gallery</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="contact.php">contact</a></li>
       </ul>
     </nav>
     <nav class="header-social show-for-large">

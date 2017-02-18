@@ -13,7 +13,7 @@
 .pages-header-hero {
   position: relative;
   .pages-header-box {
-    padding: 3rem 4rem;
+    padding: 4rem 4rem;
   }
   h2 {
     color: $brand-color;
@@ -47,6 +47,10 @@
   position: absolute;
   right: calcRem(-107px);
   top: calcRem(-87px);
+  &.contact {
+    right: calcRem(-138px);
+    top: calcRem(-165px);
+  }
   transform: rotate(270deg);
   padding: 1rem 2rem 9rem 3rem;
   @media screen and (max-width: map-get($breakpoints, large)) {
@@ -102,7 +106,10 @@
 }
 
 .shadow {
-  display: none;
+  opacity: 0;
+  &:hover {
+    opacity: 1;
+  }
   z-index: 2;
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
@@ -113,6 +120,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @include main-transition;
   h4 {
     font-family: $text-alternative;
     font-style: italic;
