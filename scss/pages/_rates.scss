@@ -1,0 +1,85 @@
+.price-box {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 6rem 4rem;
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    padding: 4rem 0.5rem;
+  }
+}
+[class^="prices"] {
+  max-width: 45rem;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.price-box {
+  table {
+    border-collapse: collapse;
+    margin: 0 auto 4rem auto;
+  }
+  tr {
+    border-bottom: 1px solid $brand-color;
+  }
+  th, td {
+    width: 10rem;
+    text-align: left;
+    vertical-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+  }
+  td {
+    font-weight: 300;
+  }
+  th {
+    color: $brand-color
+  }
+  th:first-child, td:first-child {
+    width: 20rem;
+  }
+  h5 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 0;
+    color: $brand-color;
+  }
+  p {
+    font-weight: 200;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.prices-categories {
+  li {
+    color: $brand-color;
+    border: 1px solid $brand-color;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 0.1rem 1rem;
+    border-radius: 3rem;
+    margin: 0;
+    margin-right: 1rem;
+    @include main-transition;
+    cursor: pointer;
+  }
+  @media screen and (max-width: map-get($breakpoints, large)) {
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.prices-color, .prices-treatments, .prices-extensions {
+  display: none;
+}
+
+.prices-categories li:hover {
+  background-color: $brand-color;
+  color: $light-color !important;
+}
+
+.prices-active {
+  background-color: $brand-color;
+  color: $light-color !important;
+}

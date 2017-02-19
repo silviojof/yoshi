@@ -71,8 +71,7 @@
       font-family: $text-font-stack;
     }
     &:focus {
-      outline: none;
-      border-width: 2px;
+      outline: 1px solid $brand-color;
     }
   }
 }
@@ -91,6 +90,7 @@
   p {
     display: inline;
     margin-left: 0.8rem;
+    margin-bottom: 1.1rem;
     @media screen and (max-width: map-get($breakpoints, medium)) {
       display: block;
       margin: 0 0 0.5rem 0.8rem !important;

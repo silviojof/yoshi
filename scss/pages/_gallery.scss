@@ -51,6 +51,14 @@
     right: calcRem(-138px);
     top: calcRem(-165px);
   }
+  &.rates {
+    right: -8.1875rem;
+    top: -5.8125rem;
+    padding-right: 12rem;
+    @media screen and (max-width: map-get($breakpoints, large)) {
+      padding-right: 0;
+    }
+  }
   transform: rotate(270deg);
   padding: 1rem 2rem 9rem 3rem;
   @media screen and (max-width: map-get($breakpoints, large)) {

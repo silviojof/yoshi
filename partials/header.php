@@ -30,7 +30,7 @@
             <li><a href="#">testimonials</a></li>
           </ul>
         </li>
-        <li><a href="#">rates</a></li>
+        <li><a href="rates.php">rates</a></li>
         <li><a href="#">blog</a></li>
         <li><a href="gallery.php">gallery</a></li>
         <li><a href="contact.php">contact</a></li>

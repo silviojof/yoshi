@@ -242,7 +242,7 @@ $(function(){
        next.addClass("visible");
    }, settings.delay);
 
-//SLow Scroll
+//Slow Scroll
 
   $('.arrow-bounce a').click(function(event){
     event.preventDefault();
@@ -255,7 +255,16 @@ $(function(){
   });
 
 
-
+//Prices Categories
+  $(".prices-categories li").on({
+    click: function() {
+      let dataName = $(this).data().type;
+      $('.price-box [class^="prices"]').hide();
+      $('.price-box').find('.' + dataName).show('slow');
+      $(".prices-categories li").removeClass('prices-active');
+      $(this).addClass('prices-active');
+    }
+  });
 
 
 
