@@ -1,7 +1,9 @@
 <?php include 'partials/header.php'; ?>
 
     <div class="slider-box">
-
+      <div class="hero-index">
+        
+      </div>
       <div class="arrow-bounce show-for-large">
         <a href="#main-section"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></a>
       </div>

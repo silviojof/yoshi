@@ -26,7 +26,7 @@
         </table>
       </div>
       <div class="small-12 medium-6 column footer-newsletter">
-          <h4>offers & rewardsr</h4>
+          <h4>offers 	&amp; rewards</h4>
           <p>Subscribe to receive exclusive offers and rewards from Yoshi:</p>
           <form method="post" action="#" class="footer-form">
             <input type="email" name="form-email" placeholder="Your email address.." id="email-form"/>

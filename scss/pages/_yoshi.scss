@@ -1,0 +1,48 @@
+.salon-box {
+  background-color: $mid-color-light;
+}
+
+.yoshi-img {
+  overflow: hidden;
+  background-color: blue;
+  height: 1000px;
+  background-image: url('../images/yoshi-final.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.yoshi-text {
+  padding: 3rem !important;
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    text-align: center;
+  }
+  img {
+    max-width: 15rem;
+    display: block;
+    margin: 4rem 0;
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+    margin: 4rem auto;
+    }
+  }
+  h3 {
+    font-family: $text-alternative;
+    font-weight: 400;
+    color: $brand-color;
+    font-style: italic;
+  }
+  p {
+    font-weight: 300;
+  }
+  .yoshi-button {
+    display: inline-block;
+    background-color: $brand-color;
+    text-transform: uppercase;
+    color: $light-color;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    @include main-transition;
+    &:hover {
+      background-color: $light-brand-color;
+    }
+  }
+}

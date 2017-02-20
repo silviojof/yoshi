@@ -45,11 +45,48 @@
   font-weight: 900;
   display: inline-block;
   position: absolute;
-  right: calcRem(-107px);
-  top: calcRem(-87px);
+  padding: 1rem 2rem 9rem 3rem;
+  &.gallery {
+    right: calcRem(-107px);
+    top: calcRem(-87px);
+    @media screen and (min-width: map-get($breakpoints, large)) and (max-width: 1070px) {
+      padding: 1rem 2rem 5rem 3rem;
+      right: calcRem(-139px);
+    }
+  }
   &.contact {
     right: calcRem(-138px);
     top: calcRem(-165px);
+    @media screen and (min-width: map-get($breakpoints, large)) and (max-width: 1070px) {
+      right: calcRem(-170px);
+      top: calcRem(-134px);
+    }
+  }
+  &.yoshi {
+    right: calcRem(-159px);
+    top: calcRem(-186px);
+    @media screen and (min-width: map-get($breakpoints, large)) and (max-width: 1070px) {
+      right: calcRem(-159px);
+      top: calcRem(-186px);
+    }
+  }
+  &.testimonials {
+    right: calcRem(-60px);
+    top: calcRem(-183px);
+    @media screen and (min-width: map-get($breakpoints, large)) and (max-width: 1070px) {
+      right: calcRem(-114px);
+      top: calcRem(-128px);
+      padding-bottom: 3rem !important;
+    }
+  }
+  &.team {
+    right: calcRem(-135px);
+    top: calcRem(-95px);
+    @media screen and (min-width: map-get($breakpoints, large)) and (max-width: 1070px) {
+      padding: 1rem 2rem 5rem 3rem;
+      right: calcRem(-166px);
+      top: calcRem(-62px);
+    }
   }
   &.rates {
     right: -8.1875rem;
@@ -60,7 +97,7 @@
     }
   }
   transform: rotate(270deg);
-  padding: 1rem 2rem 9rem 3rem;
+
   @media screen and (max-width: map-get($breakpoints, large)) {
     position: static;
     transform: none;
@@ -122,33 +159,31 @@
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
   background-color: none;
-  text-align: center;
-  box-shadow: inset 0px 0px 300px 200px rgba(0,0,0,0.75);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+
   @include main-transition;
-  h4 {
-    font-family: $text-alternative;
-    font-style: italic;
-    font-size: 1.3rem;
-  }
-  h6 {
-    font-size: 1.7rem;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
-  i {
-    padding: 0.3rem;
-    font-size: 1.5rem;
-  }
-  a {
+  p {
     color: $light-color;
-    &:hover {
-      color: $light-brand-color;
+    line-height: 1.8;
+    text-align: left;
+    position: absolute;
+    bottom: -1rem;
+    left: 1rem;
+    span {
+      font-style: italic;
+    }
+    a {
+      font-weight: 200;
+      color: $light-color;
+      &:hover {
+        color: $light-brand-color;
+      }
+    }
+    a, span {
+      background-color: rgba(0,0,0,0.8);
+      padding: 0.1rem;
     }
   }
+
   @media screen and (max-width: map-get($breakpoints, medium)) {
 
   }

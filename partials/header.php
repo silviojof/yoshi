@@ -22,12 +22,12 @@
     <nav class="nav-header">
       <ul>
         <li class="header-submenu">
-          <a href="#">about<i class="fa fa-plus" aria-hidden="true"></i></a>
+          <a href="#" class="header-submenu-btn">about<i class="fa fa-plus" aria-hidden="true"></i></a>
           <ul class="header-nested">
-            <li><a href="#">yoshi</a></li>
-            <li><a href="#">team</a></li>
-            <li><a href="#">press</a></li>
-            <li><a href="#">testimonials</a></li>
+            <li><a href="yoshi.php">yoshi</a></li>
+            <li><a href="team.php">team</a></li>
+            <li><a href="press.php">press</a></li>
+            <li><a href="testimonials.php">testimonials</a></li>
           </ul>
         </li>
         <li><a href="rates.php">rates</a></li>

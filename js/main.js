@@ -197,7 +197,7 @@ $(function(){
     $('.nav-header').toggle(600);
   });
 
-  $('.header-submenu').click(function(event){
+  $('.header-submenu-btn').click(function(event){
     event.preventDefault();
     $('.header-nested').toggle(600);
     if($(this).find('i').hasClass('fa fa-plus')) {
@@ -266,7 +266,36 @@ $(function(){
     }
   });
 
+//Team Categories (create the li inside the hover)
+  $('.team-img').each(function(){
+      var catName = $(this).data().cat.split(" ");
+      var lists= "";
+      catName.map(function(el){
+        lists += "<li>" + el + "</li>";
+      });
+      $(this).find('.team-categories').html(lists);
+  });
+
+// Filter the team categores
+  $('.main-team-categories li').click(function(){
+    var liName = $(this).text();
+    if(liName === "all") {
+      $('.main-team-categories li').removeClass('team-active');
+      $(this).addClass('team-active');
+      $('.team-img').show(400);
+    } else {
+      $('.main-team-categories li').removeClass('team-active');
+      $(this).addClass('team-active');
+      $('.team-img').hide();
+      $('.team-img').each(function(i){
+        let catName = $(this).data('cat').split(" ");
+        if(catName.indexOf(liName) >= 0) {
+           $(this).show(400);
+        }
+      });
+    }
+  });
 
 
-
+// end of jquery
 });
