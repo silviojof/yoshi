@@ -16,7 +16,7 @@
 <section class="salon-box">
   <div class="row expanded small-collapse">
     <div class="yoshi-img medium-6 column show-for-medium clearfix">
-
+      <img src="images/yoshi-final.jpg" />
     </div>
     <div class="small-12 medium-6 column yoshi-text">
       <img src="images/color-logo-black.svg" alt="" />

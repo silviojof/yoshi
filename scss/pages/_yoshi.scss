@@ -5,10 +5,11 @@
 .yoshi-img {
   overflow: hidden;
   background-color: blue;
-  height: 1000px;
-  background-image: url('../images/yoshi-final.jpg');
-  background-size: cover;
-  background-position: center;
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .yoshi-text {

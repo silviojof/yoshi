@@ -297,5 +297,15 @@ $(function(){
   });
 
 
+  // Fix height size for yoshi image
+
+  var imgHeight = $('.yoshi-text').outerHeight();
+  $('.yoshi-img').height(imgHeight);
+  $(window).resize(function(){
+    var imgHeight = $('.yoshi-text').outerHeight();
+    $('.yoshi-img').height(imgHeight);
+  });
+
+
 // end of jquery
 });
