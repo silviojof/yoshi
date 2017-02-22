@@ -46,6 +46,16 @@
   display: inline-block;
   position: absolute;
   padding: 1rem 2rem 9rem 3rem;
+  &.press {
+    right: calcRem(-79px);
+    top: calcRem(-122px);
+    padding-bottom: 4rem !important;
+    @media screen and (min-width: map-get($breakpoints, large)) and (max-width: 1070px) {
+      right: calcRem(-95px);
+      top: calcRem(-106px);
+      padding-bottom: 2rem !important;
+    }
+  }
   &.blog {
     right: calcRem(-128px);
     top: calcRem(-154px);

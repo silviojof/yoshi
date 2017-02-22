@@ -87,12 +87,13 @@
     </div>
     <div class="small-12 medium-4 large-3 column gallery-img">
       <div class="shadow">
-        <p><span class="text-alternative">Stylist </span><br><a href='team.php'>Sandy Douglas/a></p>
+        <p><span class="text-alternative">Stylist </span><br><a href='team.php'>Sandy Douglas</a></p>
       </div>
       <img src="images/gallery15.jpg" class="thumbnail" alt="">
     </div>
   </div>
 </section>
+
 <?php include 'partials/cta.php'; ?>
 
 <?php include 'partials/footer.php'; ?>

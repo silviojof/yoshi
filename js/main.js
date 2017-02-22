@@ -306,6 +306,28 @@ $(function(){
     $('.yoshi-img').height(imgHeight);
   });
 
+  // Fix height size for press box size
+
+  var pressWidth = $('.press-content').outerWidth();
+  $('.press-content').height(pressWidth);
+  $(window).resize(function(){
+    var pressWidth = $('.press-content').outerWidth();
+    $('.press-content').height(pressWidth);
+  });
+
+  // Press click
+  $('.press-btn').click(function(){
+    $(this).parents('.press-box').find('.press-overlay').show();
+    $(this).parents('.press-box').find('.press-img-lg').show();
+  });
+
+
+  $('.press-img-lg').click(function(){
+    $(this).parents('.press-box').find('.press-overlay').hide();
+    $(this).parents('.press-box').find('.press-img-lg').hide();
+  });
+
+
 
 // end of jquery
 });
