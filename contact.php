@@ -44,7 +44,7 @@
       <input type="date" name="form-date" id="form-date" placeholder="date" required />
     </div>
       <textarea name="form-text" id="form-text" placeholder="message"></textarea>
-      <input type="submit" name="form-submit" value="book an appointment" />
+      <input type="submit" class="form-submit" name="form-submit" value="book an appointment" />
     </form>
   </div>
   <div class="medium-12 large-6 column">
