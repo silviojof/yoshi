@@ -2,6 +2,7 @@
 
     <div class="slider-box">
       <div class="hero-index">
+        <h3 class="show-for-medium">Style<br><span class="text-alternative"><em>is attitude</em></span></h3>
         <a href="contact.php">schedule an appointment with Yoshi</a>
       </div>
       <div class="arrow-bounce show-for-large">
@@ -20,40 +21,40 @@
         <div class="small-12 medium-6 large-3 column home-gallery-column show-for-large clearfix">
           <div class="home-gallery-absolute" id="col-01">
             <div class="home-gallery-img">
-              <img src="images/gallery01.jpg" alt="" />
+              <img src="images/cover01.jpg" alt="" />
             </div>
           </div>
         </div>
         <div class="small-12 medium-6 large-3 column home-gallery-column clearfix">
           <div class="home-gallery-absolute" id="col-02">
             <div class="home-gallery-img">
-              <img src="images/gallery02.jpg" alt="" />
+              <img src="images/cover02.jpg" alt="" />
             </div>
             <div class="home-gallery-img">
-              <img src="images/gallery03.jpg" alt="" />
+              <img src="images/cover03.jpg" alt="" />
             </div>
             <div class="home-gallery-img">
-              <img src="images/gallery04.jpg" alt="" />
+              <img src="images/cover04.jpg" alt="" />
             </div>
           </div>
         </div>
         <div class="small-12 medium-6 large-3 column home-gallery-column clearfix">
           <div class="home-gallery-absolute" id="col-03">
             <div class="home-gallery-img">
-              <img src="images/gallery05.jpg" alt="" />
+              <img src="images/cover05.jpg" alt="" />
             </div>
             <div class="home-gallery-img">
-              <img src="images/gallery06.jpg" alt="" />
+              <img src="images/cover06.jpg" alt="" />
             </div>
             <div class="home-gallery-img">
-              <img src="images/gallery07.jpg" alt="" />
+              <img src="images/cover07.jpg" alt="" />
             </div>
           </div>
         </div>
         <div class="small-12 medium-6 large-3 column home-gallery-column show-for-large clearfix">
           <div class="home-gallery-absolute" id="col-04">
             <div class="home-gallery-img">
-              <img src="images/gallery08.jpg" alt="" />
+              <img src="images/cover08.jpg" alt="" />
             </div>
             <div class="yoshi-takashima">
               <h2>yoshi<br>takashima</h2>
@@ -73,7 +74,9 @@
 
       </div>
       <div class="home-yoshi-text small-12 medium-6 column">
-        <p>Vivamus finibus, turpis eget tincidunt porttitor, ligula dolor iaculis sem, ut laoreet mauris libero sit amet leo. Fusce bibendum suscipit ante, in efficitur massa maximus vitae. Integer eleifend condimentum leo sed feugiat. Donec lobortis mi purus, ac feugiat lorem luctus quis. Integer blandit elit ac risus porttitor imperdiet. </p>
+        <p>Inaugurated in 1999 under the leadership of renowned hairdresser Yoshi Takashima, the beauty salon is strategically located in the main thoroughfare of Beverly Hills, in Los Angeles, CA.</p>
+        <p>With the aim of always offering the best services, the salon offer quality products of the beauty world and a team of renowned professionals willing to improve the self-esteem of our clients.</p>
+        <p>Yoshi Hair Studio is recognized for dictating trends and introducing new ideas, since it combines information and excellence in service to technology, luxury, fashion and beauty, concepts present in the day to day network.</p>
         <a class="yoshi-button" href="#">book an appointment</a>
       </div>
     </section>

@@ -1,0 +1,110 @@
+.gallery-upload-div {
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  form {
+    position: relative;
+    background-color: $brand-color;
+    padding: 5rem 5rem;
+    border-radius: 1rem;
+    label {
+      color: $light-color;
+      display: inline-block;
+      width: calcRem(95px);
+    }
+    input[type="text"] {
+      width: 17rem;
+      margin-bottom: 0.8rem;
+      padding: 0.5rem;
+    }
+    input[type="file"] {
+      color: $light-color;
+    }
+    i {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      color: $light-color;
+    }
+    input[type="submit"] {
+      background-color: transparent;
+      color: $light-color;
+      font-family: $text-font-stack;
+      border: 1px solid $light-color;
+      padding: 1rem 3rem;
+      display: block;
+      margin: 0 auto;
+      margin-top: 1rem;
+      @include main-transition;
+      &:hover {
+        background-color: $light-brand-color;
+      }
+    }
+    .form-warning {
+      color: $light-color;
+      text-align: center;
+      text-decoration: underline;
+      font-weight: 300;
+      position: absolute;
+      top: 1rem;
+    }
+  }
+}
+
+
+.gallery-form-table {
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  .admin-gallery-img {
+    width: 80px;
+  }
+  border-collapse: collapse;
+  i {
+    font-size: 1.6rem;
+    color: $light-brand-color;
+    cursor: pointer;
+    &:hover {
+      color: $brand-color;
+    }
+  }
+  tr:nth-child(even) {
+    background-color: $mid-color-light;
+  }
+  th, td {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border: 1px solid $mid-color;
+  }
+  th {
+    background-color: $light-brand-color;
+    color: $light-color;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  th:nth-child(1), td:nth-child(1) {
+    display: none;
+  }
+  th:nth-child(2) {
+    width: 10rem;
+  }
+  th:nth-child(3) {
+    text-align: center;
+  }
+  th:nth-child(4) {
+    text-align: center;
+  }
+  td:last-child {
+    text-align: center;
+    button {
+      background-color: transparent;
+      border: none;
+    }
+  }
+}

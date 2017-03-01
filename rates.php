@@ -25,21 +25,25 @@
         <th>service</th>
         <th>junior stylist</th>
         <th>senior stylist</th>
+        <th>book</th>
       </tr>
       <tr>
         <td>women's hair cut</td>
         <td>95$</td>
         <td>135$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
       <tr>
         <td>men's hair cut</td>
         <td>65$</td>
         <td>95$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
       <tr>
         <td>blow dry</td>
         <td>45$</td>
         <td>65$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
     </table>
     <h5>complimentary consultations</h5>
@@ -58,36 +62,43 @@
         <th>service</th>
         <th>junior stylist</th>
         <th>senior stylist</th>
+        <th>book</th>
       </tr>
       <tr>
         <td>base color</td>
         <td>129$</td>
         <td>159$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
       <tr>
         <td>partial lights, balayage or ombre</td>
         <td>195$</td>
         <td>225$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
       <tr>
         <td>full lights, balayage or ombre</td>
         <td>225$</td>
         <td>255$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
       <tr>
         <td>bleach and tone</td>
         <td>165$</td>
         <td>185$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
       <tr>
         <td>gloss</td>
         <td>275$</td>
         <td>295$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
       <tr>
         <td>smudge</td>
         <td>275$</td>
         <td>295$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
     </table>
     <h5>complimentary consultations</h5>
@@ -104,31 +115,37 @@
         <th>service</th>
         <th>junior stylist</th>
         <th>senior stylist</th>
+        <th>book</th>
       </tr>
       <tr>
         <td>straightening</td>
         <td>129$</td>
         <td>159$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
       <tr>
         <td>scalp</td>
         <td>195$</td>
         <td>225$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
       <tr>
         <td>rapair</td>
         <td>225$</td>
         <td>255$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
       <tr>
         <td>blondes</td>
         <td>165$</td>
         <td>185$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
       <tr>
         <td>precolor</td>
         <td>275$</td>
         <td>295$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
 
     </table>
@@ -142,21 +159,25 @@
         <th>service</th>
         <th>junior stylist</th>
         <th>senior stylist</th>
+        <th>book</th>
       </tr>
       <tr>
         <td>fullness</td>
         <td>495$</td>
         <td>535$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
       <tr>
         <td>volume</td>
         <td>405$</td>
         <td>455$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
       <tr>
         <td>length</td>
         <td>605$</td>
         <td>655$</td>
+        <td><a class="rates-book" href="contact.php">Book</a></td>
       </tr>
     </table>
     <h5>complimentary consultations</h5>

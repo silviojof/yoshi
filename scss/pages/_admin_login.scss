@@ -1,0 +1,57 @@
+.login-form {
+  background-color: $brand-color;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 40rem;
+  h4 {
+    text-transform: uppercase;
+    text-align: center;
+    color: $light-color;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    color: $light-color;
+    text-align: center;
+    font-weight: 300;
+  }
+  i {
+    margin-right: 0.5rem;
+  }
+  label {
+    width: 19%;
+    color: $light-color;
+    display: inline-block;
+  }
+  input[type="text"], input[type="password"] {
+    width: 80%;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  input[type="submit"] {
+    color: $light-color;
+    background-color: $brand-color;
+    padding: 1rem 4rem;
+    border: 1px solid $light-color;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    @include main-transition;
+    &:hover {
+      background-color: $light-brand-color;
+    }
+  }
+}
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  img {
+    width: 20rem;
+    margin: 5rem 0;
+  }
+}

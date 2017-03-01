@@ -7,12 +7,12 @@
     top: 2rem;
     right: 1.5rem;
     color: $light-color;
-    font-size: 2rem;
+    font-size: 1.4rem;
     background-color: $brand-color;
     padding: 0.2rem;
-    line-height: 1.2;
-    height: 2.5rem;
-    width: 2.5rem;
+    line-height: 1.1;
+    height: 1.8rem;
+    width: 1.8rem;
     text-align: center;
     border-radius: 50%;
     &:hover {
@@ -30,9 +30,10 @@
 
 .black-overlay {
   position: absolute;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.1);
   top: 0; bottom: 0; left: 0; right: 0;
   z-index: 1;
+  box-shadow: inset 15px 15px 100px 0px rgba(0,0,0,0.1);
 }
 
 .press-overlay {

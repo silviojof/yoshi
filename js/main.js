@@ -306,6 +306,15 @@ $(function(){
     $('.yoshi-img').height(imgHeight);
   });
 
+  // Fix height size for blog image
+
+  var blogWidth = $('.blog-img').outerWidth();
+  $('.blog-img').height(blogWidth);
+  $(window).resize(function(){
+    blogWidth = $('.blog-img').outerWidth();
+    $('.blog-img').height(blogWidth);
+  });
+
   // Fix height size for press box size
 
   var pressWidth = $('.press-content').outerWidth();
@@ -316,11 +325,10 @@ $(function(){
   });
 
   // Press click
-  $('.press-btn').click(function(){
+  $('.press-content').click(function(){
     $(this).parents('.press-box').find('.press-overlay').show();
     $(this).parents('.press-box').find('.press-img-lg').show();
   });
-
 
   $('.press-img-lg').click(function(){
     $(this).parents('.press-box').find('.press-overlay').hide();

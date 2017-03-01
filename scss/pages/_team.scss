@@ -1,3 +1,9 @@
+.team-filter {
+  text-transform: uppercase;
+  margin: 0.9rem 0 0.3rem 0;
+  font-weight: 300;
+}
+
 .shadow-team {
   // visibility: hidden;
   opacity: 0;
@@ -81,7 +87,6 @@
 
 .main-team-categories {
   margin: 0; padding: 0; list-style-type: none;
-  margin-top: 1.5rem;
   display: block;
   text-align: left;
   @media screen and (max-width: map-get($breakpoints, large)) {
@@ -102,6 +107,9 @@
       background-color: $brand-color;
       color: $light-color;
     }
+  }
+  li:first-child {
+    margin-left: 0;
   }
 }
 

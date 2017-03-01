@@ -16,6 +16,7 @@
     display: block;
     object-fit: cover;
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -23,6 +24,7 @@
   padding: 2rem 3rem 2rem;;
   color: $mid-color;
   background-color: $light-color;
+  min-height: 21rem;
   h5 {
     font-family: $text-alternative;
     color: $brand-color;

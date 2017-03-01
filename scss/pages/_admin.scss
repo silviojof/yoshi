@@ -9,62 +9,62 @@
   img {
     width: 15rem;
     margin: 2rem;
+    margin-right: 4rem;
   }
+}
+
+.header-user {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: $light-color;
+  margin: 0;
 }
 
 .admin-nav {
   text-align: right;
   ul {
     margin: 0; padding: 0;
-    margin-top: 4rem;
+    margin-top: 2rem;
     list-style-type: none;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
   li {
     float: left;
+    padding: 1rem 2rem;
   }
   a {
-    padding: 1rem 2rem;
+    padding: 0.5rem 0;
     text-transform: uppercase;
+    color: $light-color;
+    border-bottom: 3px solid transparent;
+    @include main-transition;
+    &:hover {
+      border-bottom: 3px solid $light-color;
+    }
+  }
+  button {
+    background: $light-color;
+    padding: 1rem 2rem;
+    font-family: $text-font-stack;
+    text-transform: uppercase;
+    color: $brand-color;
+    border: 1px solid transparent;
+    cursor: pointer;
+    @include main-transition;
+    &:hover {
+      background-color: $brand-color;
+      color: $light-color;
+    }
   }
 }
 
 
 
 .update-div {
-  position: absolute;
-  background-color: rgba(0,0,0,0.5);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  form {
-    background-color: blue;
-    padding: 5rem;
-  }
-}
-
-.upload-blog {
-  margin: 6rem auto;
-  display: block;
-  background-color: $brand-color;
-  color: $light-color;
-  border: none;
-  text-transform: uppercase;
-  font-family: $text-font-stack;
-  padding: 2rem 4rem;
-  cursor: pointer;
-  @include main-transition;
-  &:hover {
-    background-color: $light-brand-color;
-  }
-}
-
-.update-div {
-  position: absolute;
+  position: fixed;
   background-color: rgba(0,0,0,0.5);
   top: 0;
   bottom: 0;
@@ -78,6 +78,18 @@
     background-color: $brand-color;
     padding: 5rem 5rem;
     border-radius: 1rem;
+    #up-blog-id {
+      display: none;
+    }
+    #up-test-id {
+      display: none;
+    }
+    #up-gallery-id {
+      display: none;
+    }
+    #up-users-id {
+      display: none;
+    }
     label {
       color: $light-color;
       display: inline-block;
@@ -194,6 +206,7 @@
 }
 
 .blog-form-table {
+  margin-bottom: 5rem;
   .admin-blog-img {
     width: 80px;
   }

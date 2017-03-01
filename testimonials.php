@@ -11,54 +11,48 @@
   </div>
 </div>
 <section class="testimonials-box clearfix">
-  <div class="testimonials-row">
-    <div class="testimonials-img">
-      <img src="images/testimonials-01.jpg" alt="" />
-    </div>
-    <div class="testimonials-content">
-      <i class="fa fa-quote-left show-for-medium" aria-hidden="true"></i>
-      <div class="testimonials-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam nec lacus congue ornare. Nunc vitae pellentesque orci, elementum ultrices neque. Pellentesque in lobortis neque. Integer vestibulum.</p>
-        <p class="testimonials-footer"><strong>Elizabteh Thompson</strong> | <em>Santa Monica</em></p>
-      </div>
-    </div>
-  </div>
-  <div class="testimonials-row">
-    <div class="testimonials-img">
-      <img src="images/testimonials-02.jpg" alt="" />
-    </div>
-    <div class="testimonials-content">
-      <i class="fa fa-quote-left show-for-medium" aria-hidden="true"></i>
-      <div class="testimonials-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam nec lacus congue ornare. Nunc vitae pellentesque orci, elementum ultrices neque. Pellentesque in lobortis neque. Integer vestibulum.</p>
-        <p class="testimonials-footer"><strong>Sophia Brown</strong> | <em>Venice</em></p>
-      </div>
-    </div>
-  </div>
-  <div class="testimonials-row">
-    <div class="testimonials-img">
-      <img src="images/testimonials-03.jpg" alt="" />
-    </div>
-    <div class="testimonials-content">
-      <i class="fa fa-quote-left show-for-medium" aria-hidden="true"></i>
-      <div class="testimonials-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam nec lacus congue ornare. Nunc vitae pellentesque orci, elementum ultrices neque. Pellentesque in lobortis neque. Integer vestibulum.</p>
-        <p class="testimonials-footer"><strong>Nicole Jolie</strong> | <em>East Hollywood</em></p>
-      </div>
-    </div>
-  </div>
-  <div class="testimonials-row">
-    <div class="testimonials-img">
-      <img src="images/testimonials-04.jpg" alt="" />
-    </div>
-    <div class="testimonials-content">
-      <i class="fa fa-quote-left show-for-medium" aria-hidden="true"></i>
-      <div class="testimonials-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam nec lacus congue ornare. Nunc vitae pellentesque orci, elementum ultrices neque. Pellentesque in lobortis neque. Integer vestibulum.</p>
-        <p class="testimonials-footer"><strong>Maureen Marge</strong> | <em>East LA</em></p>
-      </div>
-    </div>
-  </div>
+
+  <?php
+    require('partials/connection.php');
+
+    if( connect_db() ) {
+      $query = "SELECT * FROM testimonials_tb";
+      $queryResult = mysqli_query(connect_db(), $query);
+      $numOfRows = mysqli_num_rows($queryResult);
+      if( $numOfRows > 0 ) {
+        while($row = mysqli_fetch_assoc($queryResult)) {
+          $id = $row['id'];
+          $testimonial = $row['testimonial'];
+          $name = $row['name'];
+          $area = $row['area'];
+          $image = $row['image'];
+          echo "<div class='testimonials-row'>";
+          echo "<div class='testimonials-img'>";
+          if($image === '') {
+            echo "<img src='images/testimonials_avatar.png' alt='' />";
+          } else {
+            echo "<img src='images/" . $image . "' alt='' />";
+          }
+          echo "</div>";
+          echo "<div class='testimonials-content'>";
+          echo "<i class='fa fa-quote-left show-for-medium' aria-hidden='true'></i>";
+          echo "<div class='testimonials-text'>";
+          echo "<p>" . $testimonial . "</p>";
+          echo "<p class='testimonials-footer'><strong>" . $name . "</strong> | <em>" . $area . "</em></p>";
+          echo "</div>";
+          echo "</div>";
+          echo "</div>";
+        }
+      } else {
+        echo "<p>There is no data to display</p>";
+      }
+    } else {
+      die( connect_db() );
+    }
+
+    close_db(connect_db());
+
+  ?>
 </section>
 
 <?php include 'partials/cta.php'; ?>

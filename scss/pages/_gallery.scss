@@ -38,6 +38,8 @@
   }
 }
 
+
+
 .pages-header-title {
   margin: 0;
   background-color: $brand-color;
@@ -99,11 +101,11 @@
   }
   &.team {
     right: calcRem(-135px);
-    top: calcRem(-95px);
+    top: calcRem(-72px);
     @media screen and (min-width: map-get($breakpoints, large)) and (max-width: 1070px) {
       padding: 1rem 2rem 5rem 3rem;
       right: calcRem(-166px);
-      top: calcRem(-62px);
+      top: calcRem(-40px);
     }
   }
   &.rates {
@@ -169,16 +171,10 @@
 }
 
 .shadow {
-  opacity: 0;
-  &:hover {
-    opacity: 1;
-  }
   z-index: 2;
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
   background-color: none;
-
-  @include main-transition;
   p {
     color: $light-color;
     line-height: 1.8;
@@ -186,17 +182,11 @@
     position: absolute;
     bottom: -1rem;
     left: 1rem;
+    font-size: 0.9rem;
     span {
       font-style: italic;
     }
-    a {
-      font-weight: 200;
-      color: $light-color;
-      &:hover {
-        color: $light-brand-color;
-      }
-    }
-    a, span {
+    p, span {
       background-color: rgba(0,0,0,0.8);
       padding: 0.1rem;
     }

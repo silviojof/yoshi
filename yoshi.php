@@ -21,9 +21,16 @@
     <div class="small-12 medium-6 column yoshi-text">
       <img src="images/color-logo-black.svg" alt="" />
       <h3>Our Start</h3>
-      <p>In hac habitasse platea dictumst. Nullam convallis cursus lacinia. Vestibulum sollicitudin aliquet turpis. Suspendisse consectetur lacinia justo sit amet pellentesque. Proin dui massa, placerat ut mollis quis, fringilla ac arcu. Nam laoreet commodo feugiat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque vitae semper est, a condimentum ligula. Curabitur tempor condimentum ipsum sed rhoncus.</p>
+      <p>Inaugurated in 1999 under the leadership of renowned hairdresser Yoshi Takashima, the beauty salon is strategically located in the main thoroughfare of Beverly Hills, in Los Angeles, CA.</p>
+      <h3>The Salon</h3>
+      <p>With the aim of always offering the best services, the salon offer quality products of the beauty world and a team of renowned professionals willing to improve the self-esteem of our clients.</p>
+      <h3>Trends</h3>
+      <p>Yoshi Hair Studio is recognized for dictating trends and introducing new ideas, since it combines information and excellence in service to technology, luxury, fashion and beauty, concepts present in the day to day network.</p>
+      <h3>Our Magazine</h3>
+      <p>The brand also has its own magazine, which is an instrument of relationship between Yoshi Hair Studio and its customers, as well as being unique in the luxury salons segment to maintain a training center, responsible for an ongoing process of professional training and updating.
+
       <h3>Our Structure</h3>
-      <p>Curabitur tincidunt elit augue, nec fermentum tellus eleifend sed. Integer fringilla, tortor eget tempus gravida nisl ultrices et. Duis congue, enim at eleifend varius, quam tortor pellentesque augue, vel egestas eros est at turpis.</p>
+
       <a class="yoshi-button" href="contact.php">book an appointment</a>
 
     </div>
@@ -46,7 +53,7 @@
       <div class="shadow">
         <p><span class="text-alternative">Yoshi Hair Studio </span><br><a href='contact.php'>Book Now</a></p>
       </div>
-      <img src="images/salon02.jpg" class="thumbnail" alt="">
+      <img src="images/salon09.jpg" class="thumbnail" alt="">
     </div>
     <div class="small-12 medium-6 large-4 column gallery-img">
 
@@ -56,25 +63,7 @@
 
       <img src="images/salon04.jpg" class="thumbnail" alt="">
     </div>
-    <div class="small-12 medium-6 large-4 column gallery-img">
 
-      <div class="shadow">
-        <p><span class="text-alternative">Yoshi Hair Studio </span><br><a href='contact.php'>Book Now</a></p>
-      </div>
-      <img src="images/salon03.jpg" class="thumbnail" alt="">
-    </div>
-    <div class="small-12 medium-6 large-4 column gallery-img">
-      <div class="shadow">
-        <p><span class="text-alternative">Yoshi Hair Studio </span><br><a href='contact.php'>Book Now</a></p>
-      </div>
-      <img src="images/salon08.jpg" class="thumbnail" alt="">
-    </div>
-    <div class="small-12 medium-6 large-4 column gallery-img">
-      <div class="shadow">
-        <p><span class="text-alternative">Yoshi Hair Studio </span><br><a href='contact.php'>Book Now</a></p>
-      </div>
-      <img src="images/salon10.jpg" class="thumbnail" alt="">
-    </div>
   </section>
 
 

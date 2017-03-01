@@ -8,6 +8,7 @@
     <h1 class="pages-header-title team">our team</h1>
     <div class="pages-header-box clearfix">
       <h2>Professionals that<br> <span class="text-alternative">make you awesome</span></h2>
+      <p class="team-filter">Filter by service:</p>
       <ul class="main-team-categories">
         <li>color</li>
         <li>styling</li>

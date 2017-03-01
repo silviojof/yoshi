@@ -16,81 +16,37 @@
 
 <section class="gallery-box">
   <div class="row expanded small-collapse">
-    <div class="small-12 medium-4 large-3 column gallery-img">
-      <div class="shadow">
-        <p><span class="text-alternative">Stylist </span><br><a href='team.php'>Edith Burton</a></p>
-      </div>
-      <img src="images/gallery26.jpg" class="thumbnail" alt="">
-    </div>
-    <div class="small-12 medium-4 large-3 column gallery-img">
-      <div class="shadow">
-        <p><span class="text-alternative">Stylist </span><br><a href='team.php'>Gretchen	Hunter</a></p>
-      </div>
-      <img src="images/gallery25.jpg" class="thumbnail" alt="">
-    </div>
-    <div class="small-12 medium-4 large-3 column gallery-img">
+    
+    <?php
+      require('partials/connection.php');
 
-      <div class="shadow">
-        <p><span class="text-alternative">Stylist </span><br><a href='team.php'>Hope	Sandoval</a></p>
-      </div>
+      if(connect_db()) {
+        $query = "SELECT * FROM gallery_tb";
+        $queryResult = mysqli_query(connect_db(), $query);
+        $numOfRows = mysqli_num_rows($queryResult);
+        if( $numOfRows > 0 ) {
+          while($row = mysqli_fetch_assoc($queryResult)) {
+            $id = $row['id'];
+            $image = $row['image'];
+            $stylist = $row['stylist'];
 
-      <img src="images/gallery24.jpg" class="thumbnail" alt="">
-    </div>
-    <div class="small-12 medium-4 large-3 column gallery-img">
+            echo "<div class='small-12 medium-4 large-3 column gallery-img'>";
+            echo "<div class='shadow'>";
+            echo "<p><span class='text-alternative'>Stylist </span><br><span>" . $stylist . "</span></p>";
+            echo "</div>";
+            echo "<img src='images/" . $image . "' class='thumbnail' alt='Gallery Image'>";
+            echo "</div>";
 
-      <div class="shadow">
-        <p><span class="text-alternative">Stylist </span><br><a href='team.php'>Ignacio	Owen</a></p>
-      </div>
-      <img src="images/gallery23.jpg" class="thumbnail" alt="">
-    </div>
-    <div class="small-12 medium-4 large-3 column gallery-img">
-      <div class="shadow">
-        <p><span class="text-alternative">Stylist </span><br><a href='team.php'>MIndy Thomas</a></p>
-      </div>
-      <img src="images/gallery22.jpg" class="thumbnail" alt="">
-    </div>
-    <div class="small-12 medium-4 large-3 column gallery-img">
-      <div class="shadow">
-        <p><span class="text-alternative">Stylist </span><br><a href='team.php'>Francis Bacon</a></p>
-      </div>
-      <img src="images/gallery21.jpg" class="thumbnail" alt="">
-    </div>
-    <div class="small-12 medium-4 large-3 column gallery-img">
-      <div class="shadow">
-        <p><span class="text-alternative">Stylist </span><br><a href='team.php'>Miranda James</a></p>
-      </div>
-      <img src="images/gallery20.jpg" class="thumbnail" alt="">
-    </div>
-    <div class="small-12 medium-4 large-3 column gallery-img">
-      <div class="shadow">
-        <p><span class="text-alternative">Stylist </span><br><a href='team.php'>Karl White</a></p>
-      </div>
-      <img src="images/gallery19.jpg" class="thumbnail" alt="">
-    </div>
-    <div class="small-12 medium-4 large-3 column gallery-img">
-      <div class="shadow">
-        <p><span class="text-alternative">Stylist </span><br><a href='team.php'>Yoshi Takashima</a></p>
-      </div>
-      <img src="images/gallery18.jpg" class="thumbnail" alt="">
-    </div>
-    <div class="small-12 medium-4 large-3 column gallery-img">
-      <div class="shadow">
-        <p><span class="text-alternative">Stylist </span><br><a href='team.php'>Marion Watts/a></p>
-      </div>
-      <img src="images/gallery17.jpg" class="thumbnail" alt="">
-    </div>
-    <div class="small-12 medium-4 large-3 column gallery-img">
-      <div class="shadow">
-        <p><span class="text-alternative">Stylist </span><br><a href='team.php'>Yoshi takashima</a></p>
-      </div>
-      <img src="images/gallery16.jpg" class="thumbnail" alt="">
-    </div>
-    <div class="small-12 medium-4 large-3 column gallery-img">
-      <div class="shadow">
-        <p><span class="text-alternative">Stylist </span><br><a href='team.php'>Sandy Douglas</a></p>
-      </div>
-      <img src="images/gallery15.jpg" class="thumbnail" alt="">
-    </div>
+          }
+        } else {
+          echo "<p>There is no data to display</p>";
+        }
+      } else {
+        die( connect_db() );
+      }
+      close_db(connect_db());
+
+     ?>
   </div>
 </section>
 

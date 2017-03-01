@@ -28,9 +28,9 @@
       <div class="small-12 medium-6 column footer-newsletter">
           <h4>offers 	&amp; rewards</h4>
           <p>Subscribe to receive exclusive offers and rewards from Yoshi:</p>
-          <form method="post" action="#" class="footer-form">
+          <form method="post" action="" class="footer-form">
             <input type="email" name="form-email" placeholder="Your email address.." id="email-form"/>
-            <button type="submit" id="submit-form"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            <button type="submit" id="submit-form" name="newsletter-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
           </form>
       </div>
     </footer>
